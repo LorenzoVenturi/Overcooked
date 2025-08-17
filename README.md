@@ -1,5 +1,6 @@
-# Overcooked
-This repository will contain the project for the course of Autonomous and adaptive systems.
-The goal is to implement an advanced algorithm for multi agents cooperative system working well by considering multiple layouts and multiple pairs of agents
-
-Test update from vscode
+# Overcooked 
+The aim of this work is to compare the effectiveness of some of the state of the art algorithm designed for MARL (multi-agent reinforcement learning).
+In particular we will focus on 3 algorithm that we implemented from scratch:
+- QMIX
+- MAPPO
+- MAA2C
