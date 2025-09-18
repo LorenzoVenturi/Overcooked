@@ -4,12 +4,7 @@ This project has been developed during the summer of 2025 for the Autonomous and
 
 ## Gameplay Demo
 
-<div align="center">
-  <video width="400" height="300" controls>
-    <source src="rec.mov" type="video/quicktime">
-    Your browser does not support the video tag.
-  </video>
-</div>
+![Gameplay Demo](rec.mov)
 
 ### All the experiments are inside MARL_comparison.ipynb.
 
