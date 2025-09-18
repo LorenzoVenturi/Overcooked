@@ -11,8 +11,23 @@ This project has been developed during the summer of 2025 for the Autonomous and
 ## Quick Setup
 
 1. **Prerequisites**
-   - Python 3.8 or higher installed on your system
+   - **Python 3.10** (required for overcooked-ai compatibility - versions 3.11+ will not work)
    - pip (package installer for Python)
+   
+   **Installing Python 3.10:**
+   ```bash
+   # Option 1: Using Homebrew
+   brew install python@3.10
+   
+   # Option 2: Using pyenv
+   brew install pyenv
+   pyenv install 3.10.12
+   pyenv local 3.10.12
+   
+   # Create virtual environment with Python 3.10
+   python3.10 -m venv overcooked-env
+   source overcooked-env/bin/activate
+   ```
 
 2. **Clone repository**
    ```bash
