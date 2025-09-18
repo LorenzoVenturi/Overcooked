@@ -1,4 +1,4 @@
-# MAPPO and MAA2C comparison and intra-algorithm evaluation
+# MAPPO and MAA2C comparison and cross-algorithm evaluation
 
 This project has been developed during the summer of 2025 for the Autonomous and Adaptive Systems course at the University of Bologna. We present a systematic comparison between two state of the art on-policy multi-agent reinforcement learning algorithms, MAPPO and MAA2C, within the Overcooked-AI benchmark. By implementing both algorithms from scratch under a shared CTDE framework, we ensured a fair and transparent evaluation across three axes: absolute performance, generalization, and an interesting and potentially key method that we could define as cross-algorithm coordination, to evaluate robustness.
 
