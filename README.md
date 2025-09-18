@@ -33,6 +33,7 @@ This project has been developed during the summer of 2025 for the Autonomous and
    ```bash
    git clone https://github.com/LorenzoVenturi/Overcooked.git
    cd Overcooked
+   git submodule update --init --recursive
    ```
 
 3. **Install Python dependencies**
