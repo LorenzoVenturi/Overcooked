@@ -12,21 +12,23 @@ This project has been developed during the summer of 2025 for the Autonomous and
 
 1. **Prerequisites**
    - **Python 3.10** (required for overcooked-ai compatibility - versions 3.11+ will not work)
-   - pip (package installer for Python)
    
    **Installing Python 3.10:**
-   ```bash
-   # Option 1: Using Homebrew
-   brew install python@3.10
    
-   # Option 2: Using pyenv
-   brew install pyenv
-   pyenv install 3.10.12
-   pyenv local 3.10.12
+   **Mac users:**
+   ```bash
+   # Using Homebrew
+   brew install python@3.10
    
    # Create virtual environment with Python 3.10
    python3.10 -m venv overcooked-env
    source overcooked-env/bin/activate
+   ```
+   
+   **All platforms:**
+   ```bash
+   conda create -n overcooked python=3.10 -y
+   conda activate overcooked
    ```
 
 2. **Clone repository**
