@@ -4,7 +4,12 @@ This project has been developed during the summer of 2025 for the Autonomous and
 
 ## Gameplay Demo
 
-![Gameplay Demo](rec.mov)
+<div align="center">
+  <video width="400" height="300" controls>
+    <source src="rec.mov" type="video/quicktime">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ### All the experiments are inside MARL_comparison.ipynb.
 
@@ -88,7 +93,7 @@ python utils/train_agent.py --algorithm MAPPO --model-name advanced_model --layo
 
 ## Testing existing trained models
 
-Test your models or existing pre-trained ones:
+Test the models or existing pre-trained ones:
 
 ```bash
 # List available models and layouts
@@ -98,7 +103,7 @@ python utils/simple_render.py --list-models
 python utils/simple_render.py --algorithm MAPPO --model cramped_room_selfplay --layout cramped_room
 python utils/simple_render.py --algorithm MAA2C --model asymmetric_advantages_selfplay --layout asymmetric_advantages
 
-# Test your own trained model (after training with train_agent.py)
+# Test your own new trained model! (after training with train_agent.py)
 python utils/simple_render.py --algorithm MAA2C --model my_cramped_model --layout cramped_room
 ```
 
@@ -143,27 +148,3 @@ python utils/simple_render.py -a MAA2C -m multi_layout_generalized5 -l forced_co
 
 ### Layouts
 `cramped_room`, `coordination_ring`, `forced_coordination`, `asymmetric_advantages`
-
-## Workflow Examples
-
-**Complete Training → Testing Workflow:**
-```bash
-# 1. Train a new model
-python utils/train_agent.py --algorithm MAA2C --model-name my_custom_model --layout cramped_room --batches 150
-
-# 2. Test the trained model
-python utils/simple_render.py --algorithm MAA2C --model my_custom_model --layout cramped_room --episodes 5
-
-# 3. Compare with pre-trained model
-python utils/simple_render.py --algorithm MAA2C --model cramped_room_selfplay --layout cramped_room --episodes 5
-```
-
-**Multi-layout Generalization:**
-```bash
-# Train on multiple layouts for better generalization
-python utils/train_agent.py --algorithm MAPPO --model-name generalized_mappo --all-layouts --batches 200
-
-# Test generalization on different layouts
-python utils/simple_render.py --algorithm MAPPO --model generalized_mappo --layout cramped_room
-python utils/simple_render.py --algorithm MAPPO --model generalized_mappo --layout coordination_ring
-```
